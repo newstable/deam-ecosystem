@@ -1,0 +1,52 @@
+.home {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.font-1 {
+    color: rgb(45, 68, 196);
+    font-size: 18px;
+}
+
+.font-2 {
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.margin-1 {
+    margin: 20px 0;
+}
+
+.card {
+    background-color: white;
+    width: 80% !important;
+    padding: 100px 0;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgb(112, 112, 112);
+    margin-top: 150px;
+    display: flex;
+    padding: 5%;
+
+}
+
+.card a {
+    text-decoration: none;
+    color: rgb(74, 74, 74);
+}
+
+
+.img {
+    max-width: 100px;
+    width: 100%;
+}
+
+.font-3 {
+    font-size: 20px;
+    max-width: 100px;
+}
+
+@media (max-width:800px) {
+    .font-3 {
+        font-size: 18px;
+    }
+}
