@@ -7,13 +7,15 @@ const Card = () => {
         <Grid container justifyContent="center" alignContent="center" className="card">
             {data.item.map((data) => {
                 return (
-                    <Grid item xs={6} sm={4} md={3} lg={2} style={{ margin: "30px 0" }}>
-                        <Grid container justifyContent="center" alignContent="center">
-                            <a href={data.url}>
-                                <Grid item xs={12}><img src={data.img} alt="11" className="img" /></Grid>
-                                <Grid item xs={12} className="font-3">{data.name}</Grid>
+                    <Grid item xs={12} sm={6} md={4} lg={3}>
+                        <div className="item" style={{ backgroundImage: `url(${data.back})` }}>
+                            <a href={data.url} target="_blank">
+                                <div className="item-back">
+                                    <p className="font-3">{data.name}</p>
+                                    <p className="font-4">{data.context}</p>
+                                </div>
                             </a>
-                        </Grid>
+                        </div>
                     </Grid>
                 )
             }
@@ -23,9 +25,3 @@ const Card = () => {
 }
 
 export default Card;
-{/* <Grid item className="item" xs={6} sm={4} md={2}>
-    <a href={data.url} style={{ maxWidth: "100%" }} >
-        <div><img src={data.img} alt="11" className="img" /></div>
-        <div className="font-3">{data.name}</div>
-    </a>
-</Grid> */}
